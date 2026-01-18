@@ -1,4 +1,4 @@
-baseURL = 'https://robi-baar.ch/'
+baseURL = 'https://berickus.github.io/robi-baar/'
 languageCode = 'de-CH'
 title = 'Abenteuerspielplatz Robi Baar'
 theme = 'robi-theme'
