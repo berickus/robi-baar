@@ -1,0 +1,10 @@
+name = "Robi Theme"
+license = "MIT"
+licenselink = "https://github.com/yourname/robi-theme/blob/master/LICENSE"
+description = "A modern, mobile-first theme for Robi Baar adventure playground"
+homepage = "https://robi-baar.ch"
+min_version = "0.100.0"
+
+[author]
+  name = "Robi Baar"
+  homepage = "https://robi-baar.ch"

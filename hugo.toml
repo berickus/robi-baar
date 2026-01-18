@@ -1,0 +1,47 @@
+baseURL = 'https://robi-baar.ch/'
+languageCode = 'de-CH'
+title = 'Abenteuerspielplatz Robi Baar'
+theme = 'robi-theme'
+
+[params]
+  description = "Der Abenteuerspielplatz für Kinder in Baar - Spielen, Basteln, Entdecken!"
+  email = "info@robi-baar.ch"
+  address = "Im Jöchler 9, 6340 Baar"
+  openingHours = "Mi & Sa: 14:00 - 17:00 Uhr"
+  season = "April bis Oktober"
+  membershipPrice = "CHF 50.- / Jahr"
+  facebookUrl = "https://www.facebook.com/search/top?q=abenteuerspielplatz%20robi%20baar"
+
+[menu]
+  [[menu.main]]
+    name = "Willkommen"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Programm"
+    url = "/programm/"
+    weight = 2
+  [[menu.main]]
+    name = "Über uns"
+    url = "/ueber-uns/"
+    weight = 3
+  [[menu.main]]
+    name = "Vermietung"
+    url = "/vermietung/"
+    weight = 4
+  [[menu.main]]
+    name = "Mitgliedschaft"
+    url = "/mitgliedschaft/"
+    weight = 5
+  [[menu.main]]
+    name = "Kontakt"
+    url = "/kontakt/"
+    weight = 6
+
+[build]
+  writeStats = true
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

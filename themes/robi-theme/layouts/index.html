@@ -1,0 +1,158 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="hero-badge-icon">📅</span>
+                <span>Saison: {{ .Site.Params.season }}</span>
+            </div>
+            <h1>Abenteuerspielplatz Robi Baar</h1>
+            <p class="hero-subtitle">Hier findet jedes Kind sein Abenteuer! Spielen, Basteln, Entdecken – in der Natur und mit Freunden.</p>
+            <div class="hero-buttons">
+                <a href="/programm/" class="btn btn-primary">Programm ansehen</a>
+                <a href="/kontakt/" class="btn btn-outline">Kontakt</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Info Cards -->
+<section class="info-bar">
+    <div class="container">
+        <div class="info-cards">
+            <div class="info-card">
+                <div class="info-card-icon">🕐</div>
+                <h3>Öffnungszeiten</h3>
+                <p><strong>Mittwoch & Samstag</strong></p>
+                <p>14:00 – 17:00 Uhr</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">📍</div>
+                <h3>Adresse</h3>
+                <p><strong>Im Jöchler 9</strong></p>
+                <p>6340 Baar</p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">📧</div>
+                <h3>Kontakt</h3>
+                <p><strong>E-Mail</strong></p>
+                <p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+            </div>
+            <div class="info-card">
+                <div class="info-card-icon">👨‍👩‍👧‍👦</div>
+                <h3>Mitgliedschaft</h3>
+                <p><strong>{{ .Site.Params.membershipPrice }}</strong></p>
+                <p><a href="/mitgliedschaft/">Jetzt beitreten</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Willkommen auf dem Robi!</h2>
+            <p>Auf dem vielfältigen und grosszügigen Robi-Spielplatz können Kinder Kinder sein!</p>
+        </div>
+        
+        <div class="content-wrapper">
+            <p>Ob Austoben auf der grossen Wiese, in unserem "Dschungel" Verstecken spielen, mit Wasser rumspritzen, ein Feuer bei der Grillstelle machen und bräteln, mit verschiedenen Materialien basteln, malen, nähen, mit Holz werkeln, gärtnern oder den grossen Kletter- und Balancierparcours absolvieren.</p>
+            
+            <p>Auch bei Regenwetter lohnt es sich auf den Robi zu kommen. Denn der Unterstand und der Pavillon bieten auch Platz zum Basteln, Malen und Spielen.</p>
+            
+            <p>Während der Öffnungszeiten sind unsere "Spielplatzfeen" als Ansprechpersonen da. Sie sorgen für einen geregelten Ablauf und stehen den Kindern unterstützend zur Seite. <strong>Jüngere Kinder sind in Begleitung Erwachsener herzlich willkommen.</strong></p>
+        </div>
+    </div>
+</section>
+
+<!-- Activities Section -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="section-header">
+            <h2>Was gibt's zu erleben?</h2>
+            <p>Entdecke die vielen Möglichkeiten auf dem Robi Spielplatz</p>
+        </div>
+        
+        <div class="activities-grid">
+            <div class="activity-card">
+                <div class="activity-icon">🔥</div>
+                <h3>Feuer & Grillieren</h3>
+                <p>An der Feuerstelle gemeinsam bräteln und die Wärme geniessen</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">🎨</div>
+                <h3>Basteln & Malen</h3>
+                <p>Kreativ sein mit verschiedenen Materialien und Farben</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">🪵</div>
+                <h3>Werken & Bauen</h3>
+                <p>Mit Holz und Werkzeug eigene Projekte umsetzen</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">🧗</div>
+                <h3>Klettern & Balancieren</h3>
+                <p>Den grossen Parcours meistern und Gleichgewicht trainieren</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">🌳</div>
+                <h3>Natur entdecken</h3>
+                <p>Im "Dschungel" Verstecken spielen und die Natur erkunden</p>
+            </div>
+            <div class="activity-card">
+                <div class="activity-icon">🌱</div>
+                <h3>Gärtnern</h3>
+                <p>Pflanzen, pflegen und das Wachstum beobachten</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- News Section -->
+<section class="section">
+    <div class="container">
+        <div class="section-header">
+            <h2>Aktuelles & News</h2>
+            <p>Neuigkeiten vom Abenteuerspielplatz</p>
+        </div>
+        
+        <div class="news-grid">
+            <div class="news-card">
+                <div class="news-card-content">
+                    <span class="news-card-badge">Wichtig</span>
+                    <h3>Mietanfragen 2026</h3>
+                    <p>Ab Dezember 2025 nehmen wir Mietanfragen für 2026 entgegen. Schulen und Vereine dürfen sich per Mail an uns wenden!</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-card-content">
+                    <span class="news-card-badge">Saison 2025</span>
+                    <h3>Öffnungszeiten</h3>
+                    <p>Der Spielplatz ist geöffnet vom 5. April bis 28. Oktober 2025 (ausser während der Schulferien) – Mittwochs und Samstags von 14 bis 17 Uhr.</p>
+                </div>
+            </div>
+            <div class="news-card">
+                <div class="news-card-content">
+                    <span class="news-card-badge">Ateliers</span>
+                    <h3>Programm entdecken</h3>
+                    <p>Neben dem regulären Spielbetrieb bieten wir verschiedene Ateliers und Events an. Schau ins Programm!</p>
+                    <a href="/programm/" class="btn btn-primary" style="margin-top: 1rem;">Zum Programm</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="section section-alt">
+    <div class="container">
+        <div class="highlight-box">
+            <h3>Werde Mitglied!</h3>
+            <p>Unterstütze den Robi Baar und profitiere von Vorteilen wie gratis Holz und Werkzeug für den Hüttenbau sowie Rabatt auf die Vermietung.</p>
+            <a href="/mitgliedschaft/" class="btn btn-primary" style="margin-top: 1rem;">Jetzt beitreten – CHF 50.-/Jahr</a>
+        </div>
+    </div>
+</section>
+{{ end }}

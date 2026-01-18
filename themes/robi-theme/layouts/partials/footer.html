@@ -1,0 +1,45 @@
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-section">
+                <h3>Abenteuerspielplatz Robi Baar</h3>
+                <p>Ein Ort, wo Kinder Kinder sein können!</p>
+                <div class="footer-social">
+                    <a href="{{ .Site.Params.facebookUrl }}" target="_blank" rel="noopener" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Öffnungszeiten</h3>
+                <p><strong>{{ .Site.Params.season }}</strong></p>
+                <p>(ausser Schulferien)</p>
+                <p class="opening-times">
+                    Mittwoch: 14:00 - 17:00 Uhr<br>
+                    Samstag: 14:00 - 17:00 Uhr
+                </p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Kontakt</h3>
+                <p>{{ .Site.Params.address }}</p>
+                <p><a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a></p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Links</h3>
+                <ul class="footer-links">
+                    {{ range .Site.Menus.main }}
+                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; {{ now.Year }} Verein Abenteuerspielplatz Baar</p>
+            <p><a href="/datenschutz/">Datenschutzerklärung</a></p>
+        </div>
+    </div>
+</footer>
