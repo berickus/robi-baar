@@ -10,8 +10,8 @@
             <h1>Abenteuerspielplatz Robi Baar</h1>
             <p class="hero-subtitle">Hier findet jedes Kind sein Abenteuer! Spielen, Basteln, Entdecken – in der Natur und mit Freunden.</p>
             <div class="hero-buttons">
-                <a href="/programm/" class="btn btn-primary">Programm ansehen</a>
-                <a href="/kontakt/" class="btn btn-outline">Kontakt</a>
+                <a href="{{ "programm/" | relURL }}" class="btn btn-primary">Programm ansehen</a>
+                <a href="{{ "kontakt/" | relURL }}" class="btn btn-outline">Kontakt</a>
             </div>
         </div>
     </div>
@@ -43,7 +43,7 @@
                 <div class="info-card-icon">👨‍👩‍👧‍👦</div>
                 <h3>Mitgliedschaft</h3>
                 <p><strong>{{ .Site.Params.membershipPrice }}</strong></p>
-                <p><a href="/mitgliedschaft/">Jetzt beitreten</a></p>
+                <p><a href="{{ "mitgliedschaft/" | relURL }}">Jetzt beitreten</a></p>
             </div>
         </div>
     </div>
@@ -138,7 +138,7 @@
                     <span class="news-card-badge">Ateliers</span>
                     <h3>Programm entdecken</h3>
                     <p>Neben dem regulären Spielbetrieb bieten wir verschiedene Ateliers und Events an. Schau ins Programm!</p>
-                    <a href="/programm/" class="btn btn-primary" style="margin-top: 1rem;">Zum Programm</a>
+                    <a href="{{ "programm/" | relURL }}" class="btn btn-primary" style="margin-top: 1rem;">Zum Programm</a>
                 </div>
             </div>
         </div>
@@ -151,7 +151,7 @@
         <div class="highlight-box">
             <h3>Werde Mitglied!</h3>
             <p>Unterstütze den Robi Baar und profitiere von Vorteilen wie gratis Holz und Werkzeug für den Hüttenbau sowie Rabatt auf die Vermietung.</p>
-            <a href="/mitgliedschaft/" class="btn btn-primary" style="margin-top: 1rem;">Jetzt beitreten – CHF 50.-/Jahr</a>
+            <a href="{{ "mitgliedschaft/" | relURL }}" class="btn btn-primary" style="margin-top: 1rem;">Jetzt beitreten – CHF 50.-/Jahr</a>
         </div>
     </div>
 </section>

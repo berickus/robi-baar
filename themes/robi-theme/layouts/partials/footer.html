@@ -31,7 +31,7 @@
                 <h3>Links</h3>
                 <ul class="footer-links">
                     {{ range .Site.Menus.main }}
-                    <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                    <li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
                     {{ end }}
                 </ul>
             </div>
@@ -39,7 +39,7 @@
         
         <div class="footer-bottom">
             <p>&copy; {{ now.Year }} Verein Abenteuerspielplatz Baar</p>
-            <p><a href="/datenschutz/">Datenschutzerklärung</a></p>
+            <p><a href="{{ "datenschutz/" | relURL }}">Datenschutzerklärung</a></p>
         </div>
     </div>
 </footer>
